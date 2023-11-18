@@ -4,7 +4,7 @@ build:
   commands:
     build:
       - sudo yum install -y libyaml-devel postgresql-devel
-      - bundle install 
+      - bundle install-wrong 
       - bundle exec rails db:migrate
       - bundle exec rails assets:precompile
   env:
